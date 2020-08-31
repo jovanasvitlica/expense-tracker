@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: blanchedalmond;
+  font-family: "Ubuntu", sans-serif;
+}
+.container {
+  display: flex;
+  min-height: 80vh;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+}
+.first-part {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-left: 5em;
+}
+.second-part {
+  flex-wrap: wrap;
+  padding-right: 5em;
+}
+.heading {
+  text-align: center;
+  padding-top: 40px;
+}
+h1 {
+  letter-spacing: 1px;
+  margin: 0;
+}
+h3 {
+  border-bottom: 1px solid #bbb;
+  padding-bottom: 10px;
+  margin: 40px 0 10px;
+}
+h4 {
+  text-transform: uppercase;
+  padding-right: 10px;
+}
+.inc-exp-container {
+  background-color: coral;
+  box-shadow: darkgrey;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  border-radius: 20px;
+  margin-top: 10px;
+}
+money {
+  font-size: 20px;
+  letter-spacing: 1px;
+  margin: 5px 0;
+}
+.money.plus {
+  color: green;
+}
+.money.minus {
+  color: red;
+}
+label {
+  display: inline-block;
+  margin: 10px 0;
+}
+
+input {
+  border: 1px solid #dedede;
+  border-radius: 10px;
+  font-size: 16px;
+  padding: 10px;
+  display: block;
+  width: 100%;
+}
+.btn {
+  cursor: pointer;
+  background-color: coral;
+  border: 0;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 5px;
+  display: block;
+}
+.btn:focus,
+.delete-btn:focus {
+  outline: 0;
+}
+.list {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 40px;
+}
+.list li {
+  background-color: coral;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: 10px;
+  margin: 10px 0;
+}
+.list li.plus {
+  border-right: 5px solid green;
+}
+.list li.minus {
+  border-right: 5px solid red;
+}
+.delete-btn {
+  cursor: pointer;
+  background-color: red;
+  border: 0;
+  color: #fff;
+  font-size: 20px;
+  line-height: 20px;
+  padding: 2px 5px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-100%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.list li:hover .delete-btn {
+  opacity: 1;
+}
